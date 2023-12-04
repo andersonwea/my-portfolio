@@ -17,6 +17,11 @@ const config: Config = {
         'bg-primary': '#1F1F38',
         'bg-secondary': '#2C2C6C',
       },
+
+      fontFamily: {
+        primary: 'var(--font-poppins)',
+        secondary: 'var(--font-lora)',
+      },
     },
   },
   plugins: [
