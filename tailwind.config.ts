@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         primary: 'var(--font-poppins)',
         secondary: 'var(--font-lora)',
+        tertiary: 'var(--font-inter)',
       },
     },
   },

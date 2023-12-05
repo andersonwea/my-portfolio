@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Poppins, Lora } from 'next/font/google'
+import { Poppins, Lora, Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from './providers'
 import { Header } from './components/Header'
@@ -9,10 +9,17 @@ const poppins = Poppins({
   weight: ['400', '700'],
   variable: '--font-poppins',
 })
+
 const lora = Lora({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-lora',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['700'],
+  variable: '--font-inter',
 })
 
 export const metadata: Metadata = {
@@ -28,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${lora.variable} bg-bg-primary h-screen font-primary`}
+        className={`${poppins.variable} ${lora.variable} ${inter.variable} bg-bg-primary font-primary`}
       >
         <Providers>
           <Header />
