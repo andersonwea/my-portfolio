@@ -1,4 +1,4 @@
-import { Button, Link } from '@nextui-org/react'
+import { Button, Link, Tooltip } from '@nextui-org/react'
 import { Heading } from './Heading'
 import { Text } from './Text'
 import { Title } from './Title'
@@ -51,30 +51,34 @@ export function AboutMe() {
         </div>
 
         <div className="pl-7 flex items-center gap-4 self-end">
-          <Button
-            as={Link}
-            href="mailto:andersonwea14@gmail.com"
-            className="w-[64px] h-[64px]"
-            isIconOnly
-            variant="bordered"
-            color="primary"
-            radius="full"
-          >
-            <Mail />
-          </Button>
+          <Tooltip content="Email" color="primary">
+            <Button
+              as={Link}
+              href="mailto:andersonwea14@gmail.com"
+              className="w-[64px] h-[64px]"
+              isIconOnly
+              variant="bordered"
+              color="primary"
+              radius="full"
+            >
+              <Mail />
+            </Button>
+          </Tooltip>
 
-          <Button
-            as={Link}
-            isExternal
-            href="https://api.whatsapp.com/send?phone=5511977533040&text=Ol%C3%A1,%20vi%20seu%20portfolio%20e%20quero%20bater%20um%20papo."
-            className="w-[64px] h-[64px]"
-            isIconOnly
-            variant="bordered"
-            color="primary"
-            radius="full"
-          >
-            <WhatsApp />
-          </Button>
+          <Tooltip content="WhatsApp" color="primary">
+            <Button
+              as={Link}
+              isExternal
+              href="https://api.whatsapp.com/send?phone=5511977533040&text=Ol%C3%A1,%20vi%20seu%20portfolio%20e%20quero%20bater%20um%20papo."
+              className="w-[64px] h-[64px]"
+              isIconOnly
+              variant="bordered"
+              color="primary"
+              radius="full"
+            >
+              <WhatsApp />
+            </Button>
+          </Tooltip>
         </div>
       </div>
 
