@@ -18,7 +18,7 @@ export function Hero() {
       </div>
 
       <div className="flex space-x-4">
-        <Button variant="bordered" color="secondary">
+        <Button variant="ghost" color="secondary">
           Download CV
         </Button>
         <Button variant="solid" color="primary">
