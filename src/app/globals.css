@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #e3dbd4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #2C2C6C;
+  border-radius: 10px;
+}
+
+html {
+  @apply scroll-smooth
+}
