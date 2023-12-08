@@ -3,6 +3,8 @@ import { Poppins, Lora, Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from './providers'
 import { Header } from './components/Header'
+import { Footer } from './components/Footer'
+import { CopyRight } from './components/CopyRight'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -40,6 +42,8 @@ export default function RootLayout({
         <Providers>
           <Header />
           <div className="max-w-[1232px] mx-auto">{children}</div>
+          <Footer />
+          <CopyRight />
         </Providers>
       </body>
     </html>
