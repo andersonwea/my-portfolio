@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export function Hero() {
   return (
-    <section className="mt-11 space-y-11 flex flex-col items-center">
+    <section id="hero" className="mt-11 space-y-11 flex flex-col items-center">
       <div className="text-center">
         <Text as="p" className="text-white text-2xl">
           Olá, eu sou

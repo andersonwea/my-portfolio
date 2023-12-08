@@ -10,7 +10,7 @@ import { Skills } from './Skills'
 
 export function AboutMe() {
   return (
-    <section className="mx-auto mt-10">
+    <section id="about" className="mx-auto mt-[120px]">
       <Title title="Sobre mim" />
       <Text as="p" className="text-center mt-2 max-w-[750px] mx-auto">
         Sou desenvolvedor full stack com foco em desenvolvimento back-end,

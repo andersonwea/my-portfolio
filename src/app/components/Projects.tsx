@@ -30,10 +30,10 @@ const projects = [
 
 export function Projects() {
   return (
-    <section>
+    <section id="projets">
       <Title title="Meus projetos" />
 
-      <div className="grid grid-cols-2 mt-10">
+      <div className="grid grid-cols-2 mt-16">
         <div>
           <Image src={CryptoFolio} alt="" quality={100} />
         </div>
