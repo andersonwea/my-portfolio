@@ -7,7 +7,7 @@ interface TitleProps {
 
 export function Title({ title }: TitleProps) {
   return (
-    <div className="flex flex-col items-center mt-[100px]">
+    <div className="flex flex-col items-center mt-[120px]">
       <Text className="text-light">Saiba mais</Text>
       <Heading className="text-primary font-normal text-5xl">{title}</Heading>
     </div>
