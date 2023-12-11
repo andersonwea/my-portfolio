@@ -5,6 +5,8 @@ import { Providers } from './providers'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { CopyRight } from './components/CopyRight'
+import { Notification } from './components/Notification'
+import 'react-toastify/dist/ReactToastify.css'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -40,6 +42,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${lora.variable} ${inter.variable} bg-bg-primary font-primary`}
       >
         <Providers>
+          <Notification />
           <Header />
           <div className="max-w-[1232px] mx-auto">{children}</div>
           <Footer />
