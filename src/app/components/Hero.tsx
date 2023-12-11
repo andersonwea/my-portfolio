@@ -1,4 +1,4 @@
-import { Button } from '@nextui-org/react'
+import { Button, Link } from '@nextui-org/react'
 import { Heading } from './Heading'
 import { Text } from './Text'
 import heroPhoto from '@/assets/hero.png'
@@ -18,7 +18,13 @@ export function Hero() {
       </div>
 
       <div className="flex space-x-4">
-        <Button variant="ghost" color="secondary">
+        <Button
+          as={Link}
+          isExternal
+          href="Anderson-Silva-cv.pdf"
+          variant="ghost"
+          color="secondary"
+        >
           Download CV
         </Button>
         <Button variant="solid" color="primary">
