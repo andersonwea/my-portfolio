@@ -6,7 +6,7 @@ import React from 'react'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { Button } from '@nextui-org/react'
+import { Button, Spinner } from '@nextui-org/react'
 import { Text } from './Text'
 import CryptoFolio from '@/assets/projects/dashboard-edited.png'
 import PlayAi from '@/assets/projects/plai-ai.png'
@@ -86,8 +86,11 @@ export function Projects() {
   return (
     <section id="projets">
       <Title title="Meus projetos" />
-
-      <div ref={sliderRef} className="keen-slider">
+      <div
+        ref={sliderRef}
+        data-slider={loaded}
+        className="keen-slider data-[slider=false]:h-0"
+      >
         {projects.map((project, index) => (
           <Projetc
             key={project.name + index}
@@ -97,7 +100,7 @@ export function Projects() {
         ))}
       </div>
 
-      {loaded && instanceRef.current && (
+      {loaded && instanceRef.current ? (
         <div className="mx-auto max-w-max">
           <div className="flex gap-2 items-center mt-6">
             <Button
@@ -134,6 +137,8 @@ export function Projects() {
             </Button>
           </div>
         </div>
+      ) : (
+        <Spinner color="primary" className="mx-auto w-full mt-8 text-center" />
       )}
     </section>
   )
