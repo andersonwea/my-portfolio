@@ -13,25 +13,27 @@ export function AboutMe() {
     <section id="about" className="mx-auto mt-[120px]">
       <Title title="Sobre mim" />
       <Text as="p" className="text-center mt-2 max-w-[750px] mx-auto">
-        Sou desenvolvedor full stack com foco em desenvolvimento back-end,
-        apaixonado por tecnologia e sempre buscando soluções inovadoras e
-        eficientes para problemas reais. Sou formado em Banco de Dados pela
-        Universidade FIAP e atualmente estou trabalhando em projetos pessoais.
+        Sou desenvolvedor Full stack com foco em desenvolvimento Back-end, tenho
+        10 anos de experiência em atendimento ao público como Sub-Gerente de
+        comércio e estou fazendo migração de carreira. Sou formado em Banco de
+        Dados pela Universidade FIAP e atualmente estou trabalhando em projetos
+        pessoais.
       </Text>
 
       <div className="grid grid-cols-[1fr_322px_230px] mt-[60px]">
         <div className="space-y-5 px-16 py-12 bg-bg-secondary rounded-l-md">
           <Heading className="text-4xl font-normal">Anderson Silva</Heading>
           <Text className="text-primary font-secondary text-2xl">
-            Desenvolvedor Fullstack
+            Desenvolvedor Full stack
           </Text>
           <Text as="p">
             Possuo um sólido conhecimento na criação de APIs RESTful utilizando
             tecnologias como Node.js, JavaScript, TypeScript, Prisma, Docker e
-            PostgreSQL com código limpo e testado utilizando SOLID. Também tenho
-            experiência no desenvolvimento de websites responsivos e aplicações
-            web utilizando React.js, Next.js e Tailwind CSS. Estou interessado
-            em trabalhar como desenvolvedor de software Back-End ou Front-End.
+            PostgreSQL com código limpo, testes unitários e de integração,
+            utilizando principíos SOLID. Também tenho experiência no
+            desenvolvimento de websites responsivos e aplicações web utilizando
+            React.js, Next.js e Tailwind CSS. Estou interessado em trabalhar
+            como desenvolvedor de software Back-End ou Front-End.
           </Text>
 
           <Button variant="solid" color="primary">

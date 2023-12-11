@@ -13,7 +13,7 @@ export function Hero() {
         </Text>
         <Heading className="text-5xl">Anderson</Heading>
         <Text as="p" className="text-light">
-          Desenvolvedor Back-end
+          Desenvolvedor Full stack
         </Text>
       </div>
 
