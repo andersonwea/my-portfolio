@@ -10,7 +10,7 @@ import { Skills } from './Skills'
 
 export function AboutMe() {
   return (
-    <section id="about" className="mx-auto mt-[120px]">
+    <section id="about" className="mx-auto">
       <Title title="Sobre mim" />
       <Text as="p" className="text-center mt-2 max-w-[750px] mx-auto">
         Sou desenvolvedor Full stack com foco em desenvolvimento Back-end, tenho
@@ -20,8 +20,8 @@ export function AboutMe() {
         pessoais.
       </Text>
 
-      <div className="grid grid-cols-[1fr_322px_230px] mt-[60px]">
-        <div className="space-y-5 px-16 py-12 bg-bg-secondary rounded-l-md">
+      <div className="grid grid-cols-[1fr_322px_230px] max-lg:grid-cols-1 mt-[60px]">
+        <div className="space-y-5 px-16 max-sm:px-4 py-12 max-sm:py-8 bg-bg-secondary rounded-l-md">
           <Heading className="text-4xl font-normal">Anderson Silva</Heading>
           <Text className="text-primary font-secondary text-2xl">
             Desenvolvedor Full stack
@@ -43,7 +43,7 @@ export function AboutMe() {
 
         <div>
           <Image
-            className="rounded-r-md h-[440px] object-cover object-top"
+            className="rounded-r-md h-full object-cover object-top max-lg:hidden"
             src={aboutMeImage}
             width={322}
             height={440}
@@ -52,7 +52,7 @@ export function AboutMe() {
           />
         </div>
 
-        <div className="pl-7 flex items-center gap-4 self-end">
+        <div className="pl-7 max-sm:pl-0 flex items-center gap-4 self-end max-lg:mt-4">
           <Tooltip content="Email" color="primary">
             <Button
               as={Link}
@@ -84,7 +84,7 @@ export function AboutMe() {
         </div>
       </div>
 
-      <div className="flex gap-4 items-center mt-10">
+      <div className="flex max-lg:flex-col gap-4 items-center mt-10">
         <Heading
           as="h2"
           className="font-normal flex gap-2 items-center text-primary text-4xl after:h-[2px] after:w-[52px] after:block after:content-[''] after:bg-primary after:rounded-xl"

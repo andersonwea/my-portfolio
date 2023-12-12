@@ -9,8 +9,8 @@ export function Contact() {
     <section id="contact">
       <Title title="Contato" />
 
-      <div className="grid grid-cols-[0.5fr_1fr] mt-16">
-        <div className="flex flex-col gap-5 items-center">
+      <div className="grid grid-cols-[0.5fr_1fr] max-lg:grid-cols-1 mt-16">
+        <div className="flex flex-col max-lg:flex-row max-sm:flex-col max-lg:justify-center max-lg:mb-5 gap-5 items-center">
           <ContactCard
             content="andersonwea14@gmail.com"
             icon={<Mail color="#4DB5FF" />}

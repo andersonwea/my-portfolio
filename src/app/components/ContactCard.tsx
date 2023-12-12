@@ -9,7 +9,7 @@ interface ContactCardProps {
 
 export function ContactCard({ icon, content, type }: ContactCardProps) {
   return (
-    <Card className="bg-bg-secondary p-5 max-w-[292px] w-full">
+    <Card className="bg-bg-secondary p-5 max-md:px-2 max-w-[292px] w-full">
       <CardBody>
         <div className="flex flex-col items-center">
           {icon}

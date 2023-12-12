@@ -36,7 +36,7 @@ const posts = [
 
 export function LinkedinPosts() {
   return (
-    <div className="justify-self-end">
+    <div className="lg:justify-self-end max-lg:mt-5">
       <Heading as="h2">Veja no linkedin</Heading>
       <ul className="flex flex-wrap gap-2 max-w-xs mt-5">
         {posts.map((post) => (

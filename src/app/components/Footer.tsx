@@ -5,8 +5,8 @@ import { Link } from '@nextui-org/react'
 
 export function Footer() {
   return (
-    <footer className="bg-primary mt-[120px]">
-      <div className="max-w-[1232px] mx-auto grid grid-cols-[1fr_0.1fr_1fr] py-10">
+    <footer className="bg-primary mt-[120px] px-3">
+      <div className="max-w-[1232px] mx-auto grid grid-cols-[1fr_0.3fr_0.6fr] max-lg:grid-cols-[3fr_1fr] max-sm:grid-cols-1 py-10">
         <div>
           <Heading>AndersonWea</Heading>
           <div className="mt-5 space-y-1">
@@ -28,9 +28,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="max-lg:mt-5">
           <Heading as="h2">Links</Heading>
-          <ul className="mt-5 space-y-1">
+          <ul className="mt-5 sm:space-y-1 max-sm:flex max-sm:items-center max-sm:space-x-2">
             <Link
               underline="hover"
               className="text-white block max-w-max"

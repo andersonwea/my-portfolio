@@ -24,22 +24,26 @@ interface ProjectProps {
 
 export function Projetc({ project, index }: ProjectProps) {
   return (
-    <div className="grid grid-cols-2 mt-16 keen-slider__slide">
+    <div className="grid grid-cols-2 max-lg:grid-cols-1 mt-16 max-sm:mt-8 keen-slider__slide">
       <div className="rounded-2xl">
         <Image
           src={project.image}
           alt=""
+          width={604}
+          height={390}
           quality={100}
           className="rounded-2xl w-full h-full object-cover"
         />
       </div>
 
-      <div className="pl-10">
-        <Text className="text-[rgba(77,181,255,0.2)] font-tertiary text-[150px] leading-none -ml-10">
+      <div className="sm:pl-10">
+        <Text className="text-[rgba(77,181,255,0.2)] font-tertiary text-[150px] max-sm:text-[100px] leading-none -ml-10 max-sm:-ml-1">
           {index.toString().padStart(2, '0')}
         </Text>
-        <div className="flex gap-3 items-center -mt-[64px]">
-          <Heading className="text-5xl leading-none ">{project.name}</Heading>
+        <div className="flex gap-3 items-center -mt-[64px] max-sm:-mt-[50px]">
+          <Heading className="text-5xl max-sm:text-4xl leading-none ">
+            {project.name}
+          </Heading>
           <Chip variant="solid" className="bg-lime-500">
             {project.status}
           </Chip>

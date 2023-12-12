@@ -44,7 +44,7 @@ export default function RootLayout({
         <Providers>
           <Notification />
           <Header />
-          <div className="max-w-[1232px] mx-auto">{children}</div>
+          <div className="max-w-[1232px] mx-auto px-3">{children}</div>
           <Footer />
           <CopyRight />
         </Providers>

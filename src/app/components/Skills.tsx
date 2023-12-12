@@ -60,7 +60,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <div className="flex gap-3 items-center">
+    <div className="flex gap-3 flex-wrap items-center justify-center">
       {skills.map((skill, index) => (
         <Tooltip key={skill.name + index} content={skill.name} color="primary">
           <Button isIconOnly variant="bordered" color="primary" size="lg">
