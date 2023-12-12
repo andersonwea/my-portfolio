@@ -27,7 +27,7 @@ export function Hero() {
         >
           Download CV
         </Button>
-        <Button variant="solid" color="primary">
+        <Button as={Link} href="#contact" variant="solid" color="primary">
           Vamos conversar
         </Button>
       </div>

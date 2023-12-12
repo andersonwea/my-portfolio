@@ -36,7 +36,7 @@ export function AboutMe() {
             como desenvolvedor de software Back-End ou Front-End.
           </Text>
 
-          <Button variant="solid" color="primary">
+          <Button as={Link} href="#contact" variant="solid" color="primary">
             Vamos conversar
           </Button>
         </div>
