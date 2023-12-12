@@ -8,16 +8,14 @@ import 'keen-slider/keen-slider.min.css'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button, Spinner } from '@nextui-org/react'
 import { Text } from './Text'
-import CryptoFolio from '@/assets/projects/dashboard-edited.png'
-import PlayAi from '@/assets/projects/plai-ai.png'
-import MineIt from '@/assets/projects/mine-it.png'
 
 const projects = [
   {
     name: 'Crypto Folio',
     description:
       'Um aplicativo web para gerenciar sua carteira de cryptomoedas e acompanhar dados como preços, volumes de negociação e capitalização de mercado em criptomoedas.',
-    image: CryptoFolio,
+    image:
+      'https://andersonwea-portfolio.s3.us-east-2.amazonaws.com/projects/crypto-folio.png',
     status: 'Concluído',
     tags: [
       'NextJS',
@@ -37,7 +35,8 @@ const projects = [
     name: 'Play ai',
     description:
       'O projeto consiste em um player de músicas que reflete de forma visual tudo que está tocando no momento, você pode pesquisar por qualquer música que esteja disponível no youtube.',
-    image: PlayAi,
+    image:
+      'https://andersonwea-portfolio.s3.us-east-2.amazonaws.com/projects/plai-ai.png',
     status: 'Concluído',
     tags: [
       'ReactJs',
@@ -54,11 +53,33 @@ const projects = [
     name: 'Mine it',
     description:
       'O Mine-It é um jogo simples onde o objetivo é encontrar os 8 diamantes sem encontrar a bomba. O jogo é jogado em um tabuleiro de 9x9 quadrados, e cada quadrado é uma mina que pode conter um diamante ou uma bomba.',
-    image: MineIt,
+    image:
+      'https://andersonwea-portfolio.s3.us-east-2.amazonaws.com/projects/mine-it.png',
     status: 'Concluído',
     tags: ['ReactJs', 'Vite'],
     link: 'https://andersonwea.github.io/mine-it/',
     github: 'https://github.com/andersonwea/mine-it',
+  },
+  {
+    name: 'Port Dev',
+    description:
+      'O projeto consiste em ser uma plataforma em que desenvolvedores poderão se cadastrar e exibir suas habilidades, projetos, experiência para outros desenvolvedores ou possíveis recruiters que acessarem a plataforma.',
+    image:
+      'https://andersonwea-portfolio.s3.us-east-2.amazonaws.com/projects/port-dev.png',
+    status: 'Em Desenvolvimento',
+    tags: [
+      'NextJS',
+      'TailwindCSS',
+      'TypeScript',
+      'ReactJs',
+      'NextAuth',
+      'NextUi',
+      'NodeJs',
+      'Prisma',
+      'PostgreSQL',
+    ],
+    link: 'https://port-dev-web-andersonwea.vercel.app/',
+    github: 'https://github.com/andersonwea/port-dev-web',
   },
 ]
 
