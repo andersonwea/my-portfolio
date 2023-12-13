@@ -89,7 +89,7 @@ export function AboutMe() {
           as="h2"
           className="font-normal flex gap-2 items-center text-primary text-4xl after:h-[2px] after:w-[52px] after:block after:content-[''] after:bg-primary after:rounded-xl"
         >
-          Abilidades
+          Habilidades
         </Heading>
         <Skills />
       </div>
